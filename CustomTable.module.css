@@ -1,0 +1,187 @@
+.tableContainer{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+.table{
+    box-sizing: border-box;
+
+}
+.captionWrapper{
+    height: 56px;
+    /* display: flex;
+    align-items:center; */
+    margin: auto 0px;
+    padding: calc(0.25*3rem) 0;
+    border-bottom: 1px solid #272a30;
+    text-align: start;
+    color: #e2e4e9;
+    font-weight: 700;
+    font-size: calc(0.25*5em);
+    letter-spacing: -0.009em;
+}
+
+.headRow{
+    padding-left: calc(0.25*2rem);
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: minmax(0, 1fr) repeat(4, calc(0.25*22rem)) 1px;
+    grid-template-columns: minmax(0, 1fr) repeat(4, calc(0.25*22rem)) 1px;
+    align-items: center;
+    justify-items: start;
+}
+.head{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.typeCaption{
+    font-weight: 500;
+    font-size: calc(0.25*3em);
+    letter-spacing: -0.009em;
+}
+.action{
+    border: none;
+    cursor: pointer;
+    height: calc(0.25*12rem);
+    background-color: transparent;
+    padding: 0;
+    color: #999ca3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardTable{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: min-content;
+    grid-template-rows: min-content;
+    grid-row-gap: calc(0.25*1rem);
+    row-gap:  calc(0.25*1rem);
+    box-sizing: border-box;
+
+}
+.bodyRow{
+    box-shadow:  inset 0 1px #484b5126;
+    border-radius: 5px;
+    height: calc(0.25*16rem);
+    padding-left: calc(0.25*4rem);
+    background-color: #181a20;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: minmax(0, 1fr) repeat(4, calc(0.25*22rem)) 1px;
+    grid-template-columns: minmax(0, 1fr) repeat(4, calc(0.25*22rem)) 1px;
+    align-items: center;
+    justify-items: start;
+    cursor: pointer;
+}
+.bodyRow:hover{
+    background-color: #272a30;
+
+}
+.headData{
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: calc(0.25*7.5rem) auto;
+    grid-template-columns: calc(0.25*7.5rem) auto;
+    grid-column-gap: calc(0.25*5rem);
+    align-items: center;
+    pointer-events: none;
+    text-align: left;
+
+}
+.logo{
+    width: calc(0.25*7.5rem);
+    height: calc(0.25*7.5rem);
+}
+.titleContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: white;
+
+}
+.typeSubtitle1{
+    padding-right:  calc(0.25*2.5rem);
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size:  calc(0.25*4em);
+    letter-spacing: -0.009em;
+    color: white;
+}
+.start{
+    color:#e2e4e9;
+    font-weight: 700;
+    font-size: calc(0.25*3.5em);
+}
+.duration{
+    font-weight: 500;
+    font-size: calc(0.25*3.5em);
+   color: #e2e4e9;
+    letter-spacing: -0.009em;
+}
+.registered{
+    color:#e2e4e9;
+    font-weight: 700;
+    font-size: calc(0.25*3.5em);
+}
+.price{
+    color:#e2e4e9;
+    font-weight: 700;
+    font-size: calc(0.25*3.5em); 
+}
+.bodyRow .actionWrapper{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    background-color: #272A30;
+    border-radius: 5px;
+}
+.bodyRow:hover .actionWrapper{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: calc(0.25*25rem);
+    overflow: visible;
+    clip: unset;
+    clip-path: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actionDetails{
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    align-items: center;
+    color: #999ca3;
+    background-color: #353940;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(0.25*3.5em);
+    letter-spacing: -0.009em;
+}
